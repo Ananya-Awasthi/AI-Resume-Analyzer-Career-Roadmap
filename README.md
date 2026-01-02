@@ -1,5 +1,5 @@
 # AI-Resume-Analyzer-Career-Roadmap
-
+---
 ATS-Driven Resume Analysis with ML & Gemini AI Insights. A full-stack resume analysis platform that allows users to upload a resume and analyze it using two modes:
 **Standard Analyzer** → Rule-based + ML ATS evaluation
 **AI Analyzer** → ATS signals + Gemini AI explanations, role-fit analysis, roadmap & projects
@@ -41,6 +41,7 @@ Built to simulate real Applicant Tracking System (ATS) behavior while also provi
 🔹 AI Report Export
 -Download AI Resume Analysis as PDF
 -Includes ATS score, explanation, role fit, roadmap & projects
+---
 
 🧩 **System Architecture**
 Frontend (React + MUI)
@@ -50,6 +51,7 @@ Flask Backend (REST API)
 ATS Engine (Rules + ML)
         ↓
 AI Analyzer (Gemini API)
+---
 
 🛠️ **Tech Stack**
 
@@ -62,6 +64,7 @@ AI Analyzer (Gemini API)
 **AI:** Google Gemini API, Prompt-engineered JSON output, Response caching
 
 **Utilities:** pdfplumber (PDF parsing), python-docx (DOCX parsing), reportlab (PDF generation)
+---
 
 📊 **ATS Scoring Breakdown**
 Component	Weight
@@ -72,6 +75,7 @@ Resume Length	10%
 File Type	5%
 
 Final ATS score is fully explainable and deterministic.
+---
 
 🧠 **Machine Learning Usage**
 
@@ -84,42 +88,67 @@ Resume word count
 Output:
 Resume Quality (LOW / MEDIUM / HIGH)
 Confidence score
+---
 
-⚙️ Local Setup Instructions
-1️⃣ Clone Repository
-git clone https://github.com/YOUR_USERNAME/ai-resume-analyzer.git
-cd ai-resume-analyzer
+⚙️ **Local Setup Instructions**
 
-2️⃣ Backend Setup
-cd backend
-python -m venv venv
-venv\Scripts\activate   # Windows
-pip install -r requirements.txt
+Clone the project
 
+```bash
+  git clone https://github.com/Ananya-Awasthi/AI-Resume-Analyzer-Career-Roadmap/tree/main
+```
+
+Go to the project directory
+
+```bash
+  cd AI-Resume-Analyzer-Career-Roadmap
+```
+
+Create a Virtual Environment
+
+```bash
+  cd backend
+  python -m venv venv
+```
+
+Install dependencies:
+
+```bash
+  pip install -r requirements.txt
+```
 
 Create .env file:
 
+```env
 GEMINI_API_KEY=your_api_key_here
+```
 
-
-Run backend:
-
+Run backend
+```bash
 python app.py
+```
 
-3️⃣ Frontend Setup
-cd frontend
-npm install
-npm run dev
+Frontend setup
 
-Open:
+```bash
+  cd frontend
+  npm install
+  npm run dev
+```
 
-http://localhost:5173
+Open
+
+```bash
+  http://localhost:5173
+```
+---
 
 🔐 **Security & Best Practices**
 .env excluded using .gitignore
 AI responses cached to prevent API abuse
 No resume data stored permanently
 No database required
+---
 
 🧪 **Future Improvements**
 Job description upload
