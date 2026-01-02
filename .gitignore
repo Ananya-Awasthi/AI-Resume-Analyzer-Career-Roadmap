@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+venv/
+.env
+
+# Node
+node_modules/
+
+# Uploads & cache
+uploads/
+ai_cache/
+
+# OS
+.DS_Store
