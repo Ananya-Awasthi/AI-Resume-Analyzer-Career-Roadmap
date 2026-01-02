@@ -1,18 +1,26 @@
 # AI-Resume-Analyzer-Career-Roadmap
 ---
-ATS-Driven Resume Analysis with ML & Gemini AI Insights. A full-stack resume analysis platform that allows users to upload a resume and analyze it using two modes:
+
+ATS-Driven Resume Analysis with ML & Gemini AI Insights.
+A full-stack resume analysis platform that allows users to upload a resume and analyze it using two modes:
+
 **Standard Analyzer** → Rule-based + ML ATS evaluation
+
 **AI Analyzer** → ATS signals + Gemini AI explanations, role-fit analysis, roadmap & projects
+
 Built to simulate real Applicant Tracking System (ATS) behavior while also providing human-readable AI insights.
+
 ---
 
 🚀 **Features Overview**
 🔹 Resume Upload & Role Selection
+
 -Upload resume (PDF / DOCX)
 -Select job category and specific role
 -Role-based skill matching using predefined skill maps
 
 🔹 Standard Analyzer (ATS Engine)
+
 -Calculates resume quality using explainable formulas + ML
 -Metrics Generated:
 -ATS Compatibility Score (0–100)
@@ -27,6 +35,7 @@ Built to simulate real Applicant Tracking System (ATS) behavior while also provi
 📌 No AI hallucination — deterministic & explainable
 
 🔹 AI Analyzer (Gemini-Powered)
+
 -Builds on Standard Analyzer results and explains them using AI.
 -AI Insights Provided:
 -Why this ATS score?
@@ -39,11 +48,14 @@ Built to simulate real Applicant Tracking System (ATS) behavior while also provi
 📌 Cached responses to reduce API usage
 
 🔹 AI Report Export
+
 -Download AI Resume Analysis as PDF
 -Includes ATS score, explanation, role fit, roadmap & projects
+
 ---
 
 🧩 **System Architecture**
+
 Frontend (React + MUI)
         ↓
 Flask Backend (REST API)
@@ -64,30 +76,41 @@ AI Analyzer (Gemini API)
 **AI:** Google Gemini API, Prompt-engineered JSON output, Response caching
 
 **Utilities:** pdfplumber (PDF parsing), python-docx (DOCX parsing), reportlab (PDF generation)
+
 ---
 
 📊 **ATS Scoring Breakdown**
+
 Component	Weight
+
 Skill / Keyword Match	40%
+
 Resume Sections	25%
+
 Formatting	20%
+
 Resume Length	10%
+
 File Type	5%
 
 Final ATS score is fully explainable and deterministic.
+
 ---
 
 🧠 **Machine Learning Usage**
 
 A Random Forest Classifier predicts resume quality based on:
+
 ATS score
 Skill match %
 Missing skills count
 Sections found ratio
 Resume word count
+
 Output:
 Resume Quality (LOW / MEDIUM / HIGH)
 Confidence score
+
 ---
 
 ⚙️ **Local Setup Instructions**
@@ -144,13 +167,16 @@ Open
 ---
 
 🔐 **Security & Best Practices**
+
 .env excluded using .gitignore
 AI responses cached to prevent API abuse
 No resume data stored permanently
 No database required
+
 ---
 
 🧪 **Future Improvements**
+
 Job description upload
 Resume comparison
 Resume rewriting suggestions
