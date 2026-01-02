@@ -1,4 +1,4 @@
-# AI-Resume-Analyzer-Career-Roadmap
+# 🧠AI-Resume-Analyzer-Career-Roadmap
 ---
 
 ATS-Driven Resume Analysis with ML & Gemini AI Insights.
@@ -12,36 +12,37 @@ Built to simulate real Applicant Tracking System (ATS) behavior while also provi
 
 ---
 
-🚀 **Features Overview**
+**🚀 Features Overview**
+
 🔹 Resume Upload & Role Selection
 
--Upload resume (PDF / DOCX)
--Select job category and specific role
--Role-based skill matching using predefined skill maps
+- Upload resume (PDF / DOCX)
+- Select job category and specific role
+- Role-based skill matching using predefined skill maps
 
 🔹 Standard Analyzer (ATS Engine)
 
--Calculates resume quality using explainable formulas + ML
--Metrics Generated:
--ATS Compatibility Score (0–100)
--Skill Match Percentage
--Missing Skills Count
--Resume Quality (LOW / MEDIUM / HIGH)
--Resume Length (word count)
--Sections Found (Experience, Education, Skills, Projects)
--File Type (ATS Friendly or Not)
+- Calculates resume quality using explainable formulas + ML
+- Metrics Generated:
+- ATS Compatibility Score (0–100)
+- Skill Match Percentage
+- Missing Skills Count
+- Resume Quality (LOW / MEDIUM / HIGH)
+- Resume Length (word count)
+- Sections Found (Experience, Education, Skills, Projects)
+- File Type (ATS Friendly or Not)
 
 📌 Uses rule-based scoring + Random Forest ML model
 📌 No AI hallucination — deterministic & explainable
 
 🔹 AI Analyzer (Gemini-Powered)
 
--Builds on Standard Analyzer results and explains them using AI.
--AI Insights Provided:
--Why this ATS score?
--Role Fit Analysis
--Personalized Learning Roadmap (max 5 steps)
--Resume-worthy Project Suggestions (2–3)
+- Builds on Standard Analyzer results and explains them using AI.
+- AI Insights Provided:
+- Why this ATS score?
+- Role Fit Analysis
+- Personalized Learning Roadmap (max 5 steps)
+- Resume-worthy Project Suggestions (2–3)
 
 📌 AI does NOT recalculate scores
 📌 AI only interprets ATS outputs
@@ -49,12 +50,12 @@ Built to simulate real Applicant Tracking System (ATS) behavior while also provi
 
 🔹 AI Report Export
 
--Download AI Resume Analysis as PDF
--Includes ATS score, explanation, role fit, roadmap & projects
+- Download AI Resume Analysis as PDF
+- Includes ATS score, explanation, role fit, roadmap & projects
 
 ---
 
-🧩 **System Architecture**
+**🧩System Architecture**
 
 Frontend (React + MUI)
         ↓
@@ -63,9 +64,10 @@ Flask Backend (REST API)
 ATS Engine (Rules + ML)
         ↓
 AI Analyzer (Gemini API)
+
 ---
 
-🛠️ **Tech Stack**
+**🛠️Tech Stack**
 
 **Frontend:** React (Vite), Material UI (MUI), React Router, Fetch API
 
@@ -101,15 +103,15 @@ Final ATS score is fully explainable and deterministic.
 
 A Random Forest Classifier predicts resume quality based on:
 
-ATS score
-Skill match %
-Missing skills count
-Sections found ratio
-Resume word count
+- ATS score
+- Skill match %
+- Missing skills count
+- Sections found ratio
+- Resume word count
 
 Output:
-Resume Quality (LOW / MEDIUM / HIGH)
-Confidence score
+- Resume Quality (LOW / MEDIUM / HIGH)
+- Confidence score
 
 ---
 
@@ -168,17 +170,17 @@ Open
 
 🔐 **Security & Best Practices**
 
-.env excluded using .gitignore
-AI responses cached to prevent API abuse
-No resume data stored permanently
-No database required
+- .env excluded using .gitignore
+- AI responses cached to prevent API abuse
+- No resume data stored permanently
+- No database required
 
 ---
 
 🧪 **Future Improvements**
 
-Job description upload
-Resume comparison
-Resume rewriting suggestions
-Multi-language support
-User authentication & history
+- Job description upload
+- Resume comparison
+- Resume rewriting suggestions
+- Multi-language support
+- User authentication & history
